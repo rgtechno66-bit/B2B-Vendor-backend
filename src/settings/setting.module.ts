@@ -1,0 +1,106 @@
+// src/faq/faq.module.ts
+
+import { Module } from '@nestjs/common';
+import { TypeOrmModule } from '@nestjs/typeorm';
+import {
+  FaqController,
+  PrivacyPolicyController,
+  TermsConditionsController,
+  ContactUsController,
+  AboutUsController,
+  FooterInfoController,
+  BannerController,
+  SyncControlSettingsController,
+  TallySettingsController,
+  LogoController,
+  TallyPathController,
+  GalleryController,
+  CronSettingsController,
+} from './setting.controller';
+import {
+  FaqService,
+  PrivacyPolicyService,
+  TermsConditionsService,
+  ContactUsService,
+  AboutUsService,
+  FooterInfoService,
+  BannerService,
+  SyncControlSettingsService,
+  TallySettingsService,
+  LogoService,
+  TallyPathService,
+  GalleryService,
+  CronSettingsService,
+} from './setting.service';
+import {
+  Faq,
+  PrivacyPolicy,
+  TermsConditions,
+  ContactUs,
+  AboutUs,
+  FooterInfo,
+  Banner,
+  SyncControlSettings,
+  TallySettings,
+  Logo,
+  TallyPathEntity,
+  Gallery,
+  CronSettings,
+} from './setting.entity';
+import { FileStorageService } from '../service/file-storage.service';
+import { ScheduleModule } from '@nestjs/schedule';
+import { CronSchedulerService } from '../service/cron-scheduler.service';
+@Module({
+  imports: [
+    TypeOrmModule.forFeature([
+      Gallery,
+      TallyPathEntity,
+      Logo,
+      Faq,
+      PrivacyPolicy,
+      TermsConditions,
+      ContactUs,
+      AboutUs,
+      FooterInfo,
+      Banner,
+      SyncControlSettings,
+      TallySettings,
+      CronSettings,
+    ]),
+    ScheduleModule.forRoot(),
+  ],
+  controllers: [
+    GalleryController,
+    TallyPathController,
+    LogoController,
+    FaqController,
+    PrivacyPolicyController,
+    TermsConditionsController,
+    ContactUsController,
+    AboutUsController,
+    FooterInfoController,
+    BannerController,
+    SyncControlSettingsController,
+    TallySettingsController,
+    CronSettingsController,
+  ],
+  providers: [
+    GalleryService,
+    TallyPathService,
+    LogoService,
+    FaqService,
+    PrivacyPolicyService,
+    TermsConditionsService,
+    ContactUsService,
+    AboutUsService,
+    FooterInfoService,
+    BannerService,
+    FileStorageService,
+    SyncControlSettingsService,
+    TallySettingsService,
+    CronSettingsService,
+    CronSchedulerService,
+  ],
+  exports: [CronSettingsService, CronSchedulerService],
+})
+export class SettingModule {}

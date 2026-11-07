@@ -1,0 +1,95 @@
+{
+  "voucher": [
+    {
+      "vouchernumber": "1",
+      "voucherdate": "2024-04-01",
+      "vouchertype": "Purchase Order",
+      "referenceno": "1",
+      "guid": "3acfb8fe-d43d-4b00-9b75-cf88538b1077-0000043b",
+      "masterid": "1083",
+      "partyname": "LUTRON GL SALES AND SERVICES PVT LTD",
+      "closingbalance": "2024234.06",
+      "nxpartycode": "NULL",
+      "amount": "357.54",
+      "customername": "NULL",
+      "partygstin": "06AABCL6632K1ZF",
+      "emailid": "abhishek.karna91@gmail.com",
+      "mobilenumber": "6362541270",
+      "buyeraddress": "A, B, Bangalore",
+      "email": "abhishek.amsan@gmail.com",
+      "consigneeaddress": "A, B, C",
+      "state": "Karnataka",
+      "placeofsupply": "Karnataka",
+      "payment_terms": [
+        {
+          "terms": "Smartworks Coworking Spaces Limited"
+        },
+        {
+          "terms": "Tower D, Cyber Park,"
+        },
+        {
+          "terms": "C-28 & 29"
+        },
+        {
+          "terms": "NOIDA 201309 UP"
+        },
+        {
+          "terms": "Mohammad Faiz / Sandeep"
+        },
+        {
+          "terms": "7017772623/9996068238"
+        }
+      ],
+      "orders": [
+        {
+          "orderid": "NULL",
+          "nxorderid": "NULL",
+          "tlorderid": "NULL"
+        }
+      ],
+      "items": [
+        {
+          "orderno": "1",
+          "orderdue": "2024-04-01",
+          "itemname": "CAMC - LSC-GOLD-OW",
+          "nxitemcode": "NULL",
+          "partno": "NULL",
+          "baseunits": "Nos",
+          "actualqty": "3",
+          "billedqty": "3",
+          "inclrate": "0",
+          "rate": "101",
+          "discperc": "0",
+          "discamt": "0",
+          "discprop": "0",
+          "amount": "303",
+          "accountingname": "Purchase",
+          "gstper": "18",
+          "description": [
+            {
+              "desc": "SFDC HYD B3 AMC"
+            },
+            {
+              "desc": "Period 01.05.2025 to 30.07.2025"
+            },
+            {
+              "desc": "Quarterly PPM Activity"
+            }
+          ]
+        }
+      ],
+      "ledger": [
+        {
+          "ledgername": "CGST",
+          "rateperc": "0",
+          "amount": "27.27"
+        },
+        {
+          "ledgername": "SGST",
+          "rateperc": "0",
+          "amount": "27.27"
+        }
+      ]
+    }
+  ]
+}
